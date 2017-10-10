@@ -4,31 +4,50 @@
 	<meta charset="UTF-8">
 	<title>card-flip</title>
 	<link rel="stylesheet" type="text/css" href="card-flip.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="card-flip.js"></script>
+
 </head>
 <body>
-	
-	<div class="card">
-		<div class="card-holder">
-			<div class="card-front"><img src=""></div>
-			<div class="card-back"><img src=""></div>
-		</div>
 
+<!-- 	Card is the outter container in which children will be able to
+	play around in a 3d environment. -->
+	<div class="card">
+		<!-- card-holder is the inner container. 
+		It will have 2 children, front and back.
+		Front and back will NOT move.
+		card-holder will move. -->
+		<div class="card-holder">
+			<div class="card-front">
+				<img src="http://www.magicalearscollectibles.com/assets/images/7509055880193.jpg" />
+			</div>
+			<div class="card-back">
+				<img src="https://i5.walmartimages.com/asr/5e489c75-b01f-45d6-90cd-4d1663ab82b5_14.9c828b7a4a9cbe71caf4fc212ec52c4a.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" />
+			</div>
+		</div>
 	</div>
+
 
 
 	<label>Change Perspective</label>
-	<input id="change-perspective" value="200px">
+	<input id="change-perspective" value="200px" />
+	<br />
 	<label>Change Origin</label>
+	<input id="change-loc" value="10% 0" />
+
+
 	<div id="parent">
 		<div id="threeD">
-			hello, world im a threeD child
+			Hello, world. I'm a 3D child.
 		</div>
 		<div id="threeD2">
-			hello, world im another threeD child
-		</div>
+			Hello, world. I'm another 3D child.
+		</div>		
 		<div id="threeD3">
-			hello, world im yet another threeD child
-		</div>
+			Hello, world. I'm a Z 3D child.
+		</div>		
 	</div>
+
 </body>
 </html>
