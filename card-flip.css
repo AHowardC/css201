@@ -1,0 +1,63 @@
+img{
+	max-width: 100%;
+}
+
+.card{
+	width: 300px;
+	max-height: 100px;
+	perspective: 500px;
+	border: 2px solid red;
+}
+.car-holder{
+	width: 300px;
+	height: 300px;
+
+	transform-style: preserve-3d;
+	transition: all 1s;
+	position: relative;
+}
+
+.card-front, .card-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+
+}
+
+.card-front{
+	transform: rotateX(180deg);
+}
+
+.flip{
+	transform: rotateY(-180deg);
+}
+
+#parent{
+	height: 200px;
+	width: 200px;
+	margin: 50px;
+	padding: 10px;
+	background-color: #dcdcdc;
+	border: 1px solid black;
+	perspective: 200px;
+
+}
+
+#threeD,#threeD2{
+	background-color: #00ff00;
+	padding: 50px;
+	border: 1px solid #ff00ff;
+	transform: rotateX(45deg);
+}
+
+#threeD2{
+	background-color: #ffff00;
+	transform: rotateY(45deg);
+}
+
+#threeD3{
+	background-color: #0000ff;
+	transform: rotateZ(45deg);
+}
+
